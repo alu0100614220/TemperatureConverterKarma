@@ -5,6 +5,7 @@
   "main": "temperature.js",
   "scripts": {
     //"test": "./node_modules/karma/bin/karma start karma.conf.js"
+    //para que entre en el travis bien.
   },
   "keywords": [
     "regexp"
