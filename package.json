@@ -4,6 +4,7 @@
   "description": "\"Conversor de temperaturas con Karma\"",
   "main": "temperature.js",
   "scripts": {
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
   },
   "keywords": [
     "regexp"
