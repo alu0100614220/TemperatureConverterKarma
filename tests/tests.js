@@ -1,31 +1,33 @@
 var assert = chai.assert;
 
 suite('temperature', function() {
+
     setup(function(){
-      if (typeof html !== 'undefined') {
-          document.body.innerHTML = __html__['tests/test.html'];
+      if (typeof __html__ !== 'undefined') {
+          document.body.innerHTML = __html__['tests/index.html'];
           original = document.getElementById('original');
           converted = document.getElementById('converted');
       }
     });
-    test('32F = 0.0C', function() {
+
+    test('32F = 0C', function() {
         original.value = "32F";
         calculate();
-        assert.deepEqual(converted.innerHTML, "0.0 Celcius");
+        assert.deepEqual(converted.innerHTML, "0.0 Celsius");
     });
     test('45C = 113.0 Farenheit', function() {
         original.value = "45C";
         calculate();
-        assert.deepEqual(converted.innerHTML, "113.0 Farenheit");
+        assert.deepEqual(converted.innerHTML, "113.0 Fahrenheit");
+    });
+    test('65.8 = 150.4 Farenheit', function() {
+        original.value = "65.8C";
+        calculate();
+        assert.deepEqual(converted.innerHTML, "150.4 Fahrenheit");
     });
     test('5X = error', function() {
         original.value = "5X";
         calculate();
         assert.match(converted.innerHTML, /ERROR/);
-    });
-    test('65.8C = 150.4 Farenheit', function() {
-        original.value = "65.8C";
-        calculate();
-        assert.deepEqual(converted.innerHTML, "150.4 Farenheit");
     });
 });
