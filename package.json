@@ -1,0 +1,18 @@
+{
+  "name": "Temperatureconverter",
+  "version": "1.0.0",
+  "description": "\"Conversor de temperaturas\"",
+  "main": "tests.js",
+  "scripts": {
+    "test": "open tests/index.html"
+  },
+  "keywords": [
+    "regexp"
+  ],
+  "author": "Adrian",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "*"
+  }
+}
