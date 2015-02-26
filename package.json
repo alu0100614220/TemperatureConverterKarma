@@ -1,7 +1,7 @@
 {
-  "name": "Temperatureconverter",
+  "name": "TemperatureConverterKarma",
   "version": "1.0.0",
-  "description": "\"Conversor de temperaturas\"",
+  "description": "\"Conversor de temperaturas con Karma\"",
   "main": "tests.js",
   "scripts": {
     "test": "open tests/index.html"
@@ -13,6 +13,10 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^1.10.0",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-minify": "0.0.5",
+    "gulp-util": "^3.0.4",
     "mocha": "*"
   }
 }
