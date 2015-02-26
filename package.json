@@ -2,7 +2,7 @@
   "name": "TemperatureConverterKarma",
   "version": "1.0.0",
   "description": "\"Conversor de temperaturas con Karma\"",
-  "main": "tests.js",
+  "main": "temperature.js",
   "scripts": {
     "test": "open tests/index.html"
   },
@@ -12,15 +12,16 @@
   "author": "Adrian",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^1.10.0",
+    "chai": "^2.1.0",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
     "gulp-minify": "0.0.5",
     "gulp-util": "^3.0.4",
     "jasmine-core": "^2.2.0",
     "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.1.7",
-    "karma-html2js-preprocessor": "*",
+    "karma-html2js-preprocessor": "^0.1.0",
     "karma-jasmine": "^0.3.5",
     "karma-mocha": "^0.1.10",
     "mocha": "^2.1.0"
